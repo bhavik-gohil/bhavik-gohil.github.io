@@ -1,108 +1,98 @@
-/* global */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
-.grid-2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-style: normal
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #101214;
-    color: #7A7C80;
+.main {
+    padding: 10vh 20vw 0 20vw;
+}
+
+.name {
+    font-size: 40px;
+    padding: 30px 0 10px 0;
+    font-weight: 900;
 
 }
 
-h2,.white{
-    color: #fff;
-}
-
-a{
-    color: #7A7C80;
-    text-decoration: none;
-}
-/* section 1 */
-.section-1{
-    padding-top: 40vh;
-    text-align: center;
-}
-
-.section-1 p{
-    font-size: 1.1rem;
+.designation {
+    font-size: 20px;
     padding-bottom: 10px;
-    margin:0;
+
 }
 
-.section-1 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-1 a{
-    font-size: 1.5rem;
-    padding: 10px;
-}
-/* section 2 */
-.section-2{
-    padding-top: 10vh;
-    width: 70%;
+.text-justify {
+    text-align: justify
 }
 
-.section-2 h2{
-    font-size: 1.7rem;
-    margin-bottom: 15px;
+.font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
-.section-2 p{
-    font-size: 1.1rem;
-    padding-bottom: 30px;
-    margin:0;
+.muted {
+    color: hsl(220 8.9% 46.1%);
+
 }
 
-.section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
-}
-/* animations / utilities */
-.section-2 a:hover{
-    font-size: 1.3rem;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
+.links a i {
+    color: rgb(116, 123, 136);
+    border: 1px solid rgb(223, 226, 230);
+
+    font-size: 22px;
+    border-radius: 20%;
+    height: 24px;
+    width: 24px;
+    padding: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-1 a:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.white:hover{
-    position: relative;
-    padding-left: 10px;
-}
-
-/* media queres */
-@media(max-width:780px){
-    .grid-2{
-        grid-template-columns: 1fr;
-    }
-    .section-1{
-        padding:0;
-        padding-top: 5rem;
-    }
-    .section-2{
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
-    }
+a {
+    text-decoration: none;
 }
 
 li {
     padding-bottom: 10px;
+}
+
+.main p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.main h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.main a {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.main .links a i:hover {
+    cursor: pointer;
+    transition: 350ms;
+    color: rgb(85, 90, 97);
+    background-color: rgb(236, 238, 243)
+}
+
+
+@media(max-width:780px) {
+    .main {
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding: 1.5rem;
+    }
 }
