@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 body {
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Inter', sans-serif;
     font-style: normal
 }
 
 .main {
-    padding: 10vh 20vw 0 20vw;
+    padding: 6vh 20vw 0 20vw;
 }
 
 .name {
     font-size: 40px;
-    padding: 30px 0 10px 0;
+    padding: 20px 0 10px 0;
     font-weight: 900;
 
 }
@@ -42,6 +41,11 @@ body {
 
 }
 
+.main .links a {
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
 .links a i {
     color: rgb(116, 123, 136);
     border: 1px solid rgb(223, 226, 230);
@@ -66,19 +70,13 @@ li {
 }
 
 .main p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 10px;
     margin: 0;
 }
 
 .main h2 {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-
-.main a {
-    font-size: 1.5rem;
-    padding: 10px;
+    font-size: 1.4rem;
 }
 
 .main .links a i:hover {
