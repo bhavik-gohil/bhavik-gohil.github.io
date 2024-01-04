@@ -84,16 +84,15 @@ li {
 
 .title-item {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    display: grid;
+    gap: 1rem;
 }
 
 .mini-card {
     border: 1px solid rgb(223, 226, 230);
     border-radius: 6px;
     padding: 12px 8px;
-    margin: 10px 10px 0 0;
-    width: 210px;
-
 }
 
 .mini-card .title {
@@ -162,6 +161,12 @@ li {
 @media(max-width:480px) {
     .main {
         width: 90vw;
+    }
+}
+
+@media (min-width: 520px) {
+    .title-item {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
